@@ -1,0 +1,40 @@
+        *{font-family: sans-serif;}
+        ul 
+        {
+            /* list-style-image: url("icons/unchecked_16.png"); */
+            list-style-position: inside;
+            margin-right: 120px;
+        }
+        li
+        {
+            padding: 15px 15px 10px 30px;
+        }
+        li.unchecked_even
+        {
+            background-color: #ADD8E6;
+        }
+        li.unchecked_odd
+        {
+            background-color: #A5CCDA;
+        }
+        li.checked
+        {
+            background-color: #E2E2E2;
+            /* list-style-image: url("icons/checked_16.png"); */
+        }
+        li span
+        {
+            margin-left: 10px;
+        }
+        li.checked span
+        {
+            text-decoration-line: line-through;
+        }
+        li span.delete_mark
+        {
+            font-weight: 900;
+            color: brown;
+            font-size: 12px;
+            margin-left: 20px;
+            text-decoration-line: none;
+        }
