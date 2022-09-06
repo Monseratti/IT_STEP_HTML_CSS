@@ -1,0 +1,31 @@
+*{font-family: sans-serif;}
+.content
+{
+    padding: 20px;
+}
+p.underline
+{
+    font-style: italic;
+    font-size: small;
+}
+div.menu
+{
+    width:max-content;
+    padding: 20px;
+    background-color: rgb(238, 237, 237);
+}
+div.menu h4
+{
+    text-align: center;
+    margin-bottom: -10px;
+}
+li a:link, a:visited
+{
+    text-decoration: none;
+    color: rgb(83, 83, 248);
+}
+li a:hover
+{
+    text-decoration: underline;
+    color: blue;
+}
