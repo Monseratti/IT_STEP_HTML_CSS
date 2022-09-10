@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heard</title>
+    <style>
+        div
+        {
+            margin: 100px 100px;
+        }
+        img
+        {
+            size: 50%;
+            filter: grayscale(100%);
+        }
+        img:hover
+        {
+            transform: scale(1.5,1.5);
+            filter: none;
+            transition: 5s;
+        }
+        img:hover::after
+        {
+            transition: 0s;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="icons/favorites.png" alt="Heard">
+    </div>
+    <br><br><a href="index.html">Back</a>
+</body>
+</html>
