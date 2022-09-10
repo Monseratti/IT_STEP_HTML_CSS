@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text block</title>
+    <style>
+        .container
+        {
+            position: relative;
+            height: 600px; width: 800px;
+        }
+        .block
+        {
+            position: absolute;
+            height: 33.33333%;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .block_1
+        {
+            position: absolute;
+            top: 33.33333%;
+            height: 33.33333%;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .block_2
+        {
+            position: absolute;
+            top: 66.66666%;
+            height: 33.33333%;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .text
+        {
+            position: absolute;
+            width: 50%; height: max-content;
+            text-align: center; top: 50%;
+        }
+
+        .filltext
+        {
+            position:absolute;
+            width: 50%; height: 100%;
+            background-color: black;
+            opacity: 0;
+            transition: opacity 0.5s ease 0s;
+        }
+        
+        .image
+        {
+            background-image: url("images/bg_image.webp");
+            position: absolute;
+            width: 50%; height: 100%; left: 50%;
+            background-size: 100% 100%;
+            transition: background-size 1s ease 0s;
+        }
+
+        .block:hover .filltext
+        {
+            opacity: 0.5;
+        }
+        .block:hover .image
+        {
+            background-size: 150% 150%;
+        }
+        .block_1:hover .filltext
+        {
+            opacity: 0.5;
+        }
+        .block_1:hover .image
+        {
+            background-size: 150% 150%;
+        }
+        .block_2:hover .filltext
+        {
+            opacity: 0.5;
+        }
+        .block_2:hover .image
+        {
+            background-size: 150% 150%;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class="block">
+            <div class="text">Lorem ipsum dolor sit amet</div>
+            <div class="filltext"></div>
+            <div class="image"></div>
+        </div>
+        <div class="block_1">
+            <div class="image"></div>
+            <div class="text">Lorem ipsum dolor sit amet</div>
+            <div class="filltext"></div>
+        </div>
+        <div class="block_2">
+            <div class="text">Lorem ipsum dolor sit amet</div>
+            <div class="filltext"></div>
+            <div class="image"></div>
+        </div>
+    </div>    
+</body>
+</html>
