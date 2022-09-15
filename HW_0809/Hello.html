@@ -19,7 +19,7 @@
             position: absolute;
             top: 50%; left: 45%;
         }
-        .left, .right
+        .left
         {
             display: inline-block;
             position: absolute;
@@ -30,7 +30,7 @@
             transform-origin: 0 0;
             transition: 2s;
         }
-        .right
+        .left:last-child
         {
             left: 50%;
             transform-origin: 100% 0;
@@ -40,7 +40,7 @@
         {
             transform: rotateY(45deg);
         }
-        .container:hover .right
+        .container:hover .left:last-child
         {
             transform: rotateY(-45deg);
         }
@@ -54,7 +54,7 @@
     <div class="container">
         <div class="hello">HELLO</div>
         <div class="left"></div>
-        <div class="right"></div>
+        <div class="left"></div>
     </div>
 </body>
 </html>

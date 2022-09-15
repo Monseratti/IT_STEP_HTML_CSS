@@ -1,0 +1,54 @@
+*{font-family: sans-serif;}
+body
+{
+  min-width: 500px;
+}
+.first_lvl
+{
+  display: inline-block;
+  border: 3px solid darkgreen;
+  background-color: green;
+  color: snow;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  margin-left: -5px;
+}
+.submenu, .subsubmenu
+{
+  position: relative;
+  margin-left: 0px;
+  display: inline-block;
+}
+.submenu_content, .subsubmenu_content
+{
+  position: absolute;
+  display: none;
+}
+.subsubmenu_content
+{
+  box-sizing: border-box;
+  left: 125px;
+  top: 0px;
+}
+.first_lvl:hover
+{
+  cursor: pointer;
+  background-color:darkgreen;
+}
+.submenu:hover>.submenu_content
+{
+  display: block;
+}
+.submenu:hover>.first_lvl
+{
+  background-color: darkgreen;
+}
+.subsubmenu:hover>.subsubmenu_content
+{
+  display: block;
+}
+.subsubmenu:hover>.first_lvl
+{
+  background-color: darkgreen;
+}
