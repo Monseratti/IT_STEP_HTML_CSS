@@ -1,0 +1,38 @@
+/* Header color: #ADD8E6 */
+/* Odd row color: #F5F5F5 */
+/* Even row color: #E9E9E9 */
+
+* {font-family: sans-serif;}
+
+table
+{
+    position: relative;
+    border-collapse: collapse;
+    max-width: 900px; min-width: 900px;
+    text-align: center;
+    overflow: auto;
+}
+table>thead>tr>th, table>tbody>tr>th
+{
+    background-color: #ADD8E6;
+    line-height: 270%;
+    width: 150px;
+}
+table>thead
+{
+    position: sticky;
+    top: 0;
+}
+table>tbody>tr>th
+{
+    position: sticky;
+    left: 0;
+}
+table>tbody>tr:nth-child(even)
+{
+    background-color: #E9E9E9;
+}
+table>tbody>tr:nth-child(odd)
+{
+    background-color: #F5F5F5;
+}

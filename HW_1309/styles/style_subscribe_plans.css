@@ -1,0 +1,101 @@
+/* Global settings: fonts, borders, shadows*/
+*{font-family: sans-serif;}
+div
+{
+    display: inline-block;
+    margin-top: 120px;
+    transition: all 1s ease 0s;
+    z-index: 1;
+}
+table
+{
+    background-color: #ffffff;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 1px 1px 10px 5px lightgrey;
+    border-radius: 10px;
+    margin: 5px;
+}
+table>thead>tr>th
+{
+    line-height: 300%;
+    width: 200px;
+    border-bottom: 3px solid brown;
+}
+table>tbody>tr>td
+{
+    font-weight:bold;
+    font-size: 12px;
+    padding: 10px 10px 0px 10px;
+}
+table>tfoot>tr>td>button
+{
+    background-color: brown;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    height: 40px; width: 100px;
+    margin: 20px;
+}
+/* //////////////////////////////////////// */
+/* Global settings: price */
+table>tbody>tr:first-child>td
+{
+    font-size: 48px;
+    line-height: normal;
+}
+/* //////////////////////////////////////// */
+/* Global settings: period */
+table>tbody>tr:nth-child(2)>td
+{
+    opacity: 0.4;
+    vertical-align: top;
+    padding-top: 0;
+}
+/* //////////////////////////////////////// */
+/* Global settings: padding for descriptions */
+table>tbody>tr:nth-child(3)>td
+{
+    padding-top: 30px;
+}
+/* //////////////////////////////////////// */
+/* Professional */
+div:nth-child(2)>table>thead>tr>th
+{
+    border-bottom-color: darkorange;
+}
+div:nth-child(2)>table>tfoot>tr>td>button
+{
+    background-color: darkorange;
+}
+/* //////////////////////////////////////// */
+/* Standart */
+div:nth-child(3)>table>thead>tr>th
+{
+    border-bottom-color: darkblue;
+}
+div:nth-child(3)>table>tfoot>tr>td>button
+{
+    background-color: darkblue;
+}
+/* //////////////////////////////////////// */
+/* Basic */
+div:nth-child(4)>table>thead>tr>th
+{
+    border-bottom-color: lawngreen;
+}
+div:nth-child(4)>table>tfoot>tr>td>button
+{
+    background-color: lawngreen;
+}
+/* //////////////////////////////////////// */
+/* Animation */
+div:hover
+{
+    transform: scaleX(1.2) scaleY(1.2);
+}
+div:hover::after
+{
+    transition-duration: 0s;
+}
+/* /////////////////////////////////////// */
