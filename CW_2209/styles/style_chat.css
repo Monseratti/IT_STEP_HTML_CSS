@@ -1,0 +1,106 @@
+*{font-family: sans-serif;}
+/* total box */
+div.container 
+{
+    display: flex;
+    flex-direction: column;
+}
+    /* chat box */
+        div.container>div
+        {
+            display: inherit;
+            margin: 10px;
+            align-items: center;
+        }
+            /* User box */
+                div.container>div>div>div
+                {
+                    display: inherit;
+                    flex-direction: column;
+                }
+                /* User name */
+                    div.container>div>div:first-child
+                    {
+                        display: inherit;
+                        align-items: center;
+                        flex-direction: row;
+                    }
+                    div.container>div>div>div>p
+                    {
+                        display: inherit;
+                        flex-direction: row-reverse;
+                        margin: 0;
+                    }
+                    div.container>div>div>div>p:first-child
+                    {
+                        font-weight:bold;
+                    }
+                    div.container>div>div>div>p:last-child
+                    {
+                        opacity: 0.5;
+                        font-size: small;
+                    }
+                /* /////////////////////////////// */
+                /* User icons */
+                    div.container>div>div>img
+                    {
+                        margin-left: 5px;
+                    }
+                /* /////////////////////////////// */
+            /* /////////////////////////////// */
+        /* /////////////////////////////// */
+        /* Message box */
+            div.container>div>div:last-child
+            {
+                width: 400px;
+                background-color: #FFB6C1;
+                margin-left: 15px;
+                border-radius: 10px 10px 10px 0px;
+            }
+            div.container>div>div:last-child>p
+            {
+                margin: 15px;
+            }
+        /* ////////////////////////////// */
+    
+    
+        /* Second user */
+            div.container>div:nth-child(even)
+            {
+                flex-direction: row-reverse;
+            }
+            /* User box */
+                div.container>div:nth-child(even)>div>div
+                {
+                    display: inherit;
+                    flex-direction: column;
+                }
+                    /* User name */
+                        div.container>div:nth-child(even)>div:first-child
+                        {
+                            flex-direction: row;
+                            margin-left: 15px;
+                        }
+                        div.container>div:nth-child(even)>div>div>p
+                        {
+                            display: inherit;
+                            flex-direction: row;
+                        }
+                    /* /////////////////////////////// */
+                    /* User icons */
+                        div.container>div:nth-child(even)>div>img
+                        {
+                            order: -1;
+                        }
+                    /* /////////////////////////////// */
+                /* Message box */
+                    div.container>div:nth-child(even)>div:last-child
+                    {
+                        background-color: #ADD8E6;
+                        border-radius: 10px 10px 0px 10px;
+                    }
+                /* /////////////////////////////// */
+            /* /////////////////////////////// */
+        /* ///////////////////////////////*/
+    /* /////////////////////////////// */ 
+/* /////////////////////////////// */

@@ -1,0 +1,96 @@
+*{font-family: sans-serif;}
+/* 
+    head #008B8B 
+    body #019E9E
+    column #DCDCDC
+    task #F5F5F5 
+*/
+.header
+{
+    position:fixed;
+    top: 0; left: 0;
+    background-color: #008B8B;
+    height: 40px;
+    width: 100vw;
+    margin: 0;
+    z-index: 1;
+}
+.header span
+{
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+}
+.content
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0;left: 0;
+    overflow: none;
+    min-height: 100vw;
+    min-width: 100vw; width: auto;
+    background-color: #019E9E;
+    margin: 0;
+}
+.content>.content__block
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    border-radius: 5px;
+    height: 700px;
+    max-width: 400px;
+    min-width: 300px;
+    margin: 80px 40px 10px 40px;
+    overflow: auto;
+    background-color: #DCDCDC;
+}
+.content>.content__block>.content__header
+{
+    position: relative;
+    top: 0; left: 10px;
+    font-weight: bold;
+}
+.content>.content__block>.content__task
+{
+    display: flex; 
+    flex-direction: column;
+    margin: 5px 10px 5px 10px;
+    background-color: #F5F5F5;
+    height: auto;
+    max-width: 380px; min-width: 280px;
+    border-radius: 10px;
+
+}
+.content>.content__block>.content__task>.content__task__text
+{
+    height: 70%;
+    padding: 10px;
+}
+.content>.content__block>.content__task>.content__task__menu
+{
+    display: flex;
+    padding-bottom: 5px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.content>.content__block>.content__task>.content__task__menu>figure
+{
+    display: flex; flex-direction: row; margin-left: 5px; margin-right: 10px;
+}
+.content>.content__block>.content__task>.content__task__menu>img
+{
+    height: 20px;width: 20px; margin-left: 10px; margin-right: 10px;
+}
+.content>.content__block>.content__task>.content__task__menu>img:last-child
+{
+    height: 50px;width: 50px;
+    justify-self: end;
+}
+.content>.content__block>.content__task>.content__task__menu>figure>img
+{
+    height: 20px;width: 20px; margin-right: 5px;
+}

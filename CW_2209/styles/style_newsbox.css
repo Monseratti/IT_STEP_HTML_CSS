@@ -1,0 +1,27 @@
+*{font-family: sans-serif;}
+
+.container
+{
+    display: flex;
+    background-color: cornflowerblue;
+}
+.container>div
+{
+    flex-grow: 1;
+    flex-basis: 33.33334%;
+}
+.container>div>div>figure
+{
+    margin: 10px 10px 40px 10px;
+}
+.container>div>div>figure>img
+{
+    height: 100%; width: 100%;
+    margin-bottom: -4px;
+}
+.container>div>div>figure>figcaption
+{
+    padding: 5px;
+    margin: 0;
+    background-color: whitesmoke;
+}
