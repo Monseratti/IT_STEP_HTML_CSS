@@ -1,0 +1,165 @@
+img
+{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.1fr 0.2fr; 
+    column-gap: 10px;
+    row-gap: 10px;
+    box-shadow: 1px 1px 3px 3px lightgray;
+    padding: 15px;
+    border-radius: 10px;
+}
+.container>.confirmations
+{
+    display: grid;
+    grid-template-rows: repeat(2, .2fr);
+}
+.container>.footer
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    grid-row: 3;
+    grid-column: span 2;
+}
+.container>.form_container, .container>.personal_form_container
+{
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+}
+.formgrid
+{
+    display: grid;
+    row-gap: 40px;
+    column-gap: 10px;
+    grid-template-columns: 30px 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+.personalformgrid
+{
+    display: grid;
+    row-gap: 40px;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+.formgrid>img
+{
+    grid-column: 1;
+}
+
+.formgrid>input:nth-child(2), :nth-child(4)
+{
+    grid-column: span 2;
+}
+.formgrid>input, .personalformgrid>input, .personalformgrid>select
+{
+    border: none;
+    border-bottom: 1px solid black;
+    line-height: 200%;
+    background-color: transparent;
+}
+.personalformgrid>input:last-child
+{
+    grid-row: 2; grid-column: 2;
+}
+.footer>button
+{
+    background-color: #008B8B;
+    border-radius: 3px;
+    padding: 10px 40px 10px 40px;
+    border: none;
+    cursor: pointer;
+}
+.footer>button:hover
+{
+    box-shadow: 0 0 3px 3px #008888;
+}
+
+@media (min-width:600px) and (max-width:900px)  {
+    .container
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 0.1fr 0.2fr;
+    }
+    .container>.form_container, .container>.personal_form_container
+    {
+        grid-template-rows: 0.1fr 1fr;
+    }
+    .container>.personal_form_container
+    {
+        grid-row: 2;
+    }
+    .container>.confirmations
+    {
+        grid-row: 3;
+    }
+    .container>.footer
+    {
+        grid-row: 4;
+    }
+}
+
+@media (max-width:600px)  {
+    .container
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 0.1fr 0.2fr;
+        justify-content: center;
+    }
+    .container>.form_container, .container>.personal_form_container
+    {
+        grid-template-rows: 0.1fr 1fr;
+    }
+    .formgrid
+    {
+        grid-template-columns: 30px 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .formgrid>input:nth-child(2), :nth-child(4)
+    {
+        grid-column: span 1;
+    }
+    .formgrid>input:last-child
+    {
+        grid-row: 4; grid-column: 2;
+    }
+
+    .container>.personal_form_container
+    {
+        grid-row: 2;
+    }
+    .personalformgrid
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        justify-content: center;
+    }
+    .personalformgrid>input:nth-child(2)
+    {
+        grid-row: 2;
+    }
+    .personalformgrid>select
+    {
+        grid-row: 3;
+    }
+    .personalformgrid>input:nth-child(4)
+    {
+        grid-row: 4; grid-column: 1;
+    }
+
+    .container>.confirmations
+    {
+        grid-row: 3;
+    }
+    .container>.footer
+    {
+        grid-row: 4;
+    }
+}

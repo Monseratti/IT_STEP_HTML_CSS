@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit card</title>
+    <link rel="stylesheet" href="styles/style_CreditCard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <span>credit card details</span>
+        </div>
+        <div class="formplace">
+            <form>
+                <div class="formgrid">
+                    <label class = "cc-number-label" for="cc-number">Card Number</label>
+                    <input class = "cc-number" type="text" min="16" placeholder="1234 5678 9012 3456">
+                    <label class = "cc-owner-label" for="cc-owner">Name On Card</label>
+                    <input class = "cc-owner" type="text" placeholder="Name Surname">
+                    <label class = "cc-exp" for="cc-month">Expiry Date</label>
+                    <input class = "cc-month" type="text" placeholder="02" min="2" max="2">
+                    <input class = "cc-year" type="text" placeholder="2017" min="4" max="4">
+                    <label class="cc-cvv-label" for="cc-cvv">CVV / CVN</label>
+                    <input class="cc-cvv" type="password" placeholder="***" min="3" max="3">
+                </div>
+            </form>
+        </div>
+    </div>
+    <br><br><a href="index.html">Back</a>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Input Style</title>
+    <link rel="stylesheet" href="styles/style_libraryinput.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+                <!-- TEXT -->
+                <div class="textgrid">
+                    <label for="inputs">Inputs</label>
+                    <input type="text" class="text" placeholder="Enter some text">
+                    <input type="text" class="valid__text" placeholder="valid text">
+                    <input type="text" class="invalid__text" placeholder="invalid text">
+                </div><br>
+                <!-- CHECK -->
+                    <label for="chbxes"><b>Check boxes</b></label>
+                    <label class="cbx_container">Subcribe
+                        <input type="checkbox">
+                        <div class="checkmark">
+                            <div class="check_block"></div>
+                        </div>
+                    </label>
+                    <label class="cbx_container">Subcribe
+                        <input type="checkbox">
+                        <div class="checkmark">
+                            <div class="check_block"></div>
+                        </div>
+                    </label><br><br> 
+                <!--RADIO -->
+                <label for="radiobox"><b>Radio buttons</b></label>
+                <label class="rbtn_container">Male
+                    <input type="radio" id="male" name="radio">
+                    <div class="rbtn_checkmark"></div>
+                </label>
+                <label class="rbtn_container">Female
+                    <input type="radio" id="female" name="radio">
+                    <div class="rbtn_checkmark"></div>
+                </label><br><br>
+                <!-- BUTTONS -->
+                <label for="buttonsbox"><b>Buttons</b></label>
+                <div class="btn_contaiter">
+                    <input class="active" type="button" value="Active">
+                    <input class="a_hover" type="button" value="Hover">
+                    <input class="danger" type="button" value="Danger">
+                    <input class="d_hover" type="button" value="Hover">
+                    <input class="disabled" type="button" value="Disabled" disabled>
+                    <input class="plus" type="button" value="+">
+                    <input class="minus" type="button" value="-">
+                </div><br>
+                <!-- TEXT AREA -->
+                <label for="textarea"><b>Text area</b></label><br><br>
+                <textarea placeholder="Enter some text..."></textarea>
+        </form>
+    </div>
+    <br><br><a href="index.html">Back</a>
+</body>
+</html>
