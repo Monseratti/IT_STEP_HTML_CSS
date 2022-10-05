@@ -1,0 +1,81 @@
+h2
+{
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+.container
+{
+    background-color: #E45D44;
+    display: grid;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 30%;
+    padding: 40px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    grid-template-rows: 3fr 1fr 1fr;
+}
+/* CONTAINER CONTENT */
+.container>.form_container
+{
+    background-color: #E6E4E4;
+    box-shadow: 0px 0px 5px 5px #c2c0c0;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 40px;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    grid-column: span 2;
+}
+.container>label
+{
+    grid-column: span 2;
+    color: white;
+    align-self: center;
+    justify-self: center;
+}
+.container>button
+{
+    height: 50px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: #375798;
+    box-shadow: 0px 0px 5px 1px #142037;
+}
+.container>button:last-child
+{
+    background-color: #1CB7EB;
+    box-shadow: 0px 0px 5px 1px #116d8c;
+}
+/* FORMGRID */
+.container>.form_container>form>.formgrid
+{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 10px;
+
+}
+.container>.form_container>form>.formgrid>input
+{
+    border: none;
+    text-align: center;
+    line-height: 200%;
+    font-weight: bold;
+}
+.container>.form_container>form>.formgrid>button
+{
+    background-color: #32A75A;
+    border: none;
+    border-bottom: 3px solid #2c9250;
+    cursor: pointer;
+}
+.container>.form_container>form>.formgrid>label
+{
+    color: #E45D44;
+    font-weight: bold;
+    cursor: pointer;
+    justify-self: center;
+}
